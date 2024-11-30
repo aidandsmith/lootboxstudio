@@ -1,11 +1,11 @@
 .checkoutCart {
     color: #fff;
     padding: 20px;
+    padding-top: 60px;
     padding-left: 40px;
     padding-right: 40px;
     max-width: 1440px;
     margin: 0 auto;
-
 }
 
 .checkoutCartItems {
@@ -54,6 +54,8 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .checkoutCartButton {
