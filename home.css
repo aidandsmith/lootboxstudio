@@ -1,0 +1,28 @@
+
+/* Header */
+.header h1 {
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.newRelease {
+    display: flex;
+    flex-direction: row;
+}
+
+.newReleaseText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem;
+}
+
+.newReleaseImage {
+    width: 100%;
+}
+
+

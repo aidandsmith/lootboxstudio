@@ -1,0 +1,118 @@
+
+/* About Section */
+
+/* Intro */
+.aboutSummary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutText {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+
+.aboutText p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.aboutImage {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutSummary h1, .rewards h2 {
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    font-size: 4rem;
+}
+
+/* Rewards */
+.rewards {
+    display: flex;
+    flex-direction: column;
+}
+
+.rewardsInformation {
+    grid-auto-columns: 2/3;
+    grid-auto-rows: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.rewardsInformation img {
+    filter: brightness(0) invert(1);
+}
+
+.rewardsInformation p {
+    font-size: 1.4rem;
+}
+
+.rewards {
+    margin: 2rem;
+}
+
+.rewardsText {
+    text-align: center;
+}
+
+.rewardOne, .rewardTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Team */
+
+.team {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+.teamHeader {
+    text-align: center;
+}
+
+.teamHeader h2 {
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    font-size: 4rem;
+}
+
+.teamMembers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aidan, .brody, .austin {
+    background-color: #253049;
+    border: 1px solid #0f172a;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.aidan h3, .brody h3, .austin h3 {
+    font-size: 1.6rem;
+}
+
+.aidan p, .brody p, .austin p {
+    color: rgb(121, 121, 230);
+}
+
+.aidan img, .brody img, .austin img {
+    border-radius: 5px;
+}
