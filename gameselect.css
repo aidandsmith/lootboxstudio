@@ -1,0 +1,57 @@
+.GameSelectText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gameSelectDivider {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.gameCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gameCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #8f8f8f;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.gameCardText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameCardButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gameCardButton button {
+    background-color: #1E1E1E;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
