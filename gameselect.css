@@ -3,16 +3,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.GameSelectText h2 {
+    padding-top: 40px;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    font-size: 4rem;
+}
+
+.GameSelectText p {
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 
 .gameSelectDivider {
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .gameCardContainer {
@@ -20,6 +38,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 20px;    
 }
 
 .gameCard {
@@ -27,31 +46,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 0 auto;
-    background-color: #8f8f8f;
+    background-color: #374565;
     border-radius: 10px;
     padding: 20px;
-}
-
-.gameCardText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
 }
 
 .gameCardButton {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
+
 }
 
 .gameCardButton button {
-    background-color: #1E1E1E;
+    background-image:linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: #fff;
     border-radius: 10px;
-    padding: 10px 40px;
+    padding: 15px 80px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 

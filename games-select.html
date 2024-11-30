@@ -10,14 +10,26 @@
 </head>
 <body>
     <header>
-        <h1>LootBox Studios | Games</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="games.html">Games</a>
-            <a href="upcoming.html">Upcoming Releases</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="checkout.html">Checkout</a>
+            <div class="navLeft">
+                <div class="navImage">
+                    <img src="img/lootboxLogo.png" alt="" width="200">
+                </div>
+
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="games.html">Games</a>
+                    <a href="upcoming.html">Upcoming Releases</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="navRight">
+                <div class="navButton">
+                    <a href="checkout.html">Buy Now</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -29,19 +41,18 @@
         <div class="gameSelectDivider">
              <section class="gameCardContainer">
                 <div class="gameCard">
-                    <img src="https://placehold.co/300x400" alt="Game 1">
-                    <div class="gameCardText">
-                        <h3>King Kong vs The World</h3>
-                        <p>King Kong vs The World is a story-driven game where you battle King Kong in 2035, facing intense challenges to save humanity from chaos.</p>
-                    </div>
-                    <div class="gameCardButton">
-                        <button>Select</button>
-                    </div>
+                    <img src="https://placehold.co/400x400" alt="Game 1">
+                    <h3>King Kong vs The World</h3>
+                    <p>King Kong vs The World is a story-driven game where you battle King Kong in 2035, facing intense challenges to save humanity from chaos.</p>
+                </div>
+                <div class="gameCardButton">
+                    <button>Select</button>
+                </div>
             </section>
 
             <section class="gameCardContainer">
                 <div class="gameCard">
-                    <img src="https://placehold.co/300x400" alt="Game 2">
+                    <img src="https://placehold.co/400x400" alt="Game 2">
                     <h3>Sea Otter vs Communist Zombies</h3>
                     <p>Sea Otter vs Communist Zombies is a 90s-style 2D platformer with intense boss battles and retro visuals. A must-play action adventure!</p>
                 </div>
@@ -52,9 +63,9 @@
 
             <section class="gameCardContainer">
                 <div class="gameCard">
-                    <img src="https://placehold.co/300x400" alt="Game 2">
+                    <img src="https://placehold.co/400x400" alt="Game 2">
                     <h3>Clyde the Capybara: Guardian of the Riverbank</h3>
-                    <p>Clyde the capybara defends his Amazon River bank from predators, battling jaguars, anacondas, and pesky pelicans to save his friends.</p>
+                    <p>Clyde the capybara defends his Amazon River bank from predators, battling jaguars, anacondas, and pesky pelicans.</p>
                 </div>
                 <div class="gameCardButton">
                     <button>Select</button>
@@ -62,10 +73,37 @@
             </section>
         </div>
     </main>
-
     <footer>
+        <div class="footerOne">
+            <img src="img/lootboxLogo.png" alt="" width="200">
+        </div>
 
-
+        <div class="footerTwo">
+            <a href="">Quick Links</a>
+            <a href="">Follow Us</a>
+            <a href="">Newsletter</a>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <script>
+        const GameCardBtn = document.querySelectorAll('.gameCardButton button');
+        GameCardBtn.forEach(btn => {
+            btn.addEventListener('click', () => {
+                confetti({
+                    particleCount: 200,
+                    spread: 70,
+                    origin: { x: 0, y: 0.6 },
+                });
+                confetti({
+                    particleCount: 200,
+                    spread: 70,
+                    origin: { x: 1, y: 0.6 },
+                });
+                
+            });
+        });
+    </script>
 </body>
 </html>
