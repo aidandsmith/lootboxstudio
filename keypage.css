@@ -1,0 +1,109 @@
+.key-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+.key-reveal-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.5s ease-out;
+    max-width: 800px;
+    width: 90%;
+}
+
+.key-reveal-box h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.game-info {
+    margin: 2rem 0;
+}
+
+.game-info h2 {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.key-display {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.key {
+    font-family: monospace;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    animation: glowPulse 2s infinite;
+}
+
+.browse-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.copy-button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.copy-button:hover {
+    background: #ff8787;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 5px rgba(78, 228, 78, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(78, 228, 78, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(78, 228, 78, 0.5);
+    }
+}
