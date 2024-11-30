@@ -6,6 +6,10 @@ headers.forEach((header) => {
       if (item !== header) {
         item.classList.remove("active");
         item.nextElementSibling.style.display = "none";
+        const icon = item.querySelector(".accordionIcon");
+        if (icon) {
+          icon.textContent = "﹀"; // Change the icon to ︾
+        }
       }
     });
 
@@ -14,5 +18,11 @@ headers.forEach((header) => {
     const content = header.nextElementSibling;
     content.style.display =
       content.style.display === "block" ? "none" : "block";
+
+    // Toggle the icon text
+    const icon = header.querySelector(".accordionIcon");
+    if (icon) {
+      icon.textContent = content.style.display === "block" ? "︽" : "﹀";
+    }
   });
 });
