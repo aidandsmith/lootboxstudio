@@ -121,7 +121,7 @@ const checkInputs = () => {
 
     
     if(emailValue !== '' && passwordValue !== '' && phoneValue !== '' && password2Value !== '' && firstnameValue !== '' && lastnameValue !== '' && ccnValue !== '' && cvvValue !== '' && expiryValue !== '' && isValidEmail(emailValue) && isValidPhone(phoneValue) && passwordValue.length >= 8 && password2Value === passwordValue) {
-        window.location.href = 'keypage.html';
+        window.location.href = 'key-page.html';
     }
     
 };
