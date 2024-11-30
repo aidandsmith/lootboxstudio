@@ -1,0 +1,98 @@
+
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #253049;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132))
+}
+
+.form-label {
+     font-size: 1.2rem;
+     font-weight: 700;
+}
+
+input, select, textarea{
+    color: #ffffff;
+}
+
+textarea:focus, input:focus {
+    color: #ffffff;
+}
+
+.form-btn {
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0 24px;
+    border-radius: 45px;
+    border: none;
+    background-color: #33845B;
+    color: #fff;
+    cursor: pointer;
+    width: 50%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.cc-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-control input, select {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: #1a243b;
+}
+
+.input-control input::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.input-control select::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.input-control input:focus, .input-control select:focus {
+    outline: 0;
+}
+
+.input-control.success input, .input-control.success select {
+    border-color: #09c372;
+}
+
+.input-control.error input, .input-control.error select {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 0.9rem;
+    height: 13px;
+}

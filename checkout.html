@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LootBox Studios | Checkout</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="checkout.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
     <header>
-        <h1>LootBox Studios | Home</h1>
         <nav>
             <div class="navLeft">
                 <div class="navImage">
@@ -33,7 +33,90 @@
             </div>
         </nav>
     </header>
-
+    <form class="user-info" action="/">
+        <h2>Complete your purchase</h2>
+        <div class="input-control">
+            <label class= "form-label" for="clientmail">Email</label>
+            <input
+                type="text" 
+                name="email" 
+                id="clientmail"
+                placeholder="Enter your email">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label class= "form-label" for="password">Password</label>
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter a password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label class= "form-label" for="password2">Password again</label>
+            <input
+                type="password"
+                name="password2"
+                id="password2"
+                placeholder="Enter a password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label class= "form-label" for="firstname">First Name</label>
+            <input
+                type="text" 
+                name="firstname" 
+                id="firstname"
+                placeholder="Enter your First Name">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label class= "form-label" for="lastname">Last Name</label>
+            <input
+                type="text" 
+                name="lastname" 
+                id="lastname"
+                placeholder="Enter your Last Name">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label class= "form-label" for="phone">Phone Number</label>
+            <input
+                type="text" 
+                name="phone" 
+                id="phone"
+                title="Please enter a valid phone number"
+                placeholder="Enter your Phone Number">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label class= "form-label" for="ccn">Credit Card Information</label>
+            <input class="form-input"
+                id="ccn" 
+                type="tel" 
+                inputmode="numeric" 
+                placeholder="xxxx xxxx xxxx xxxx">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <input class="form-input"
+                type="tel"
+                name="cvv"
+                id="cvv"
+                placeholder="Enter your CVV">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <input class="form-input"
+                type="tel"
+                name="expiry"
+                id="expiry"
+                placeholder="Enter your Expiry Date">
+            <div class="error"></div>
+        </div>
+        <button type="submit" class="form-btn"> Complete Purchase</button>
+    </form>
     <footer>
         <div class="footerOne">
             <img src="img/lootboxLogo.png" alt="" width="200">
