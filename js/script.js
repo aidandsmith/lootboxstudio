@@ -25,6 +25,21 @@ const isValidPhone = phone => {
     return re.test(String(phone));
 };
 
+const isValidCCN = ccn => {
+    const re = /^(?:\d{4} ){3}\d{4}$|^\d{16}$|^(?:\d{4} \d{6} \d{5})$|^\d{15}$/;
+    return re.test(String(ccn));
+};
+
+const isValidCVV = cvv => {
+    const re = /^[0-9]{3,4}$/;
+    return re.test(String(cvv));
+};
+
+const isValidExpiry = expiry => {
+    const re = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/;
+    return re.test(String(expiry));
+};
+
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -42,7 +57,6 @@ const setSuccess = element => {
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
 };
-
 
 const checkInputs = () => {
     const emailValue = email.value.trim();
@@ -91,7 +105,6 @@ const checkInputs = () => {
         setSuccess(lastname);
     }
 
-
     if(phoneValue === '') {
         setError(phone, 'Phone cannot be blank');
     } else if (!isValidPhone(phoneValue)) {
@@ -102,25 +115,29 @@ const checkInputs = () => {
 
     if(ccnValue === '') {
         setError(ccn, 'Credit card number cannot be blank');
+    } else if (!isValidCCN(ccnValue)) {
+        setError(ccn, 'Credit card number is not valid');
     } else {
         setSuccess(ccn);
     }
 
     if(cvvValue === '') {
         setError(cvv, 'CVV cannot be blank');
+    } else if (!isValidCVV(cvvValue)) {
+        setError(cvv, 'CVV is not valid');
     } else {
         setSuccess(cvv);
     }
 
     if(expiryValue === '') {
         setError(expiry, 'Expiry date cannot be blank');
+    } else if (!isValidExpiry(expiryValue)) {
+        setError(expiry, 'Expiry date is not valid');
     } else {
         setSuccess(expiry);
     }
  
-
-    
-    if(emailValue !== '' && passwordValue !== '' && phoneValue !== '' && password2Value !== '' && firstnameValue !== '' && lastnameValue !== '' && ccnValue !== '' && cvvValue !== '' && expiryValue !== '' && isValidEmail(emailValue) && isValidPhone(phoneValue) && passwordValue.length >= 8 && password2Value === passwordValue) {
+    if(emailValue !== '' && passwordValue !== '' && phoneValue !== '' && password2Value !== '' && firstnameValue !== '' && lastnameValue !== '' && ccnValue !== '' && cvvValue !== '' && expiryValue !== '' && isValidEmail(emailValue) && isValidPhone(phoneValue) && isValidCVV(cvvValue) && isValidExpiry(expiryValue) && isValidCCN(ccnValue) && passwordValue.length >= 8 && password2Value === passwordValue) {
         window.location.href = 'key-page.html';
     }
     
