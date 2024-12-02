@@ -21,3 +21,10 @@ let gameCardData = [
         price: 89.99
     },
 ];
+
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let calculateCartTotal = () => {
+    let cartIcon = document.getElementById('cartAmount');
+    cartIcon.innerHTML = cart.map(game => game.item).reduce((a, b) => a + b, 0);
+};
+calculateCartTotal();
