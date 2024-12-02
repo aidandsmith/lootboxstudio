@@ -4,25 +4,139 @@
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
     background-clip: text;
-    font-size: 4rem;
+    font-size: 7rem;
     text-align: center;
 }
 
-.newRelease {
-    display: flex;
-    flex-direction: row;
+.header p {
+    font-size: 1.6rem;
 }
 
-.newReleaseText {
+.welcomeSection {
+    margin: 10rem;
+}
+
+/* Column Information Section */
+.homeInformation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.homeOneText {
+    grid-column: 1/3;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 6rem;
+    align-items: center;
 }
 
-.newReleaseImage {
-    width: 100%;
+.homeOneText p, .homeTwoText p {
+    margin: 4rem;
+}
+
+.homeOneImage {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: start;
+}
+
+.homeOneImage img {
+    height: 50vh;
+    width: auto;
+}
+
+.homeTwoText {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeOneText h2, .homeTwoText h2 {
+    text-align: center;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+}
+
+.homeTwoImage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: end;
+}
+
+.homeTwoImage img {
+    height: 50vh;
+    width: auto;
 }
 
 
+/* Games Section */
+.homeGames {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.homeGamesHeader h2 {
+    text-align: center;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    font-size: 4rem;
+}
+
+.homeGamesCards {
+    display: flex;
+    margin: 2rem;
+}
+
+.gameOne, .gameTwo, .gameThree {
+    background-color: #253049;
+    border: 1px solid #253049;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.gameOne:hover, .gameTwo:hover, .gameThree:hover {
+    background-color: rgb(121, 121, 230);;
+    cursor: pointer;
+}
+
+
+/* Call To Action Section */
+
+.banner {
+    background-color: #4c326b;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 1.6rem;
+}
+
+.bannerText h2 {
+    font-size: 2rem;
+}
+
+.bannerButton {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.bannerButton button {
+    background-color: #e9c46a;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: #253049 2px solid;
+    border-radius: 5px;
+}
