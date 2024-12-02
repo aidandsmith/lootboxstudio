@@ -120,7 +120,7 @@
 }
 
 .quantity-controls button {
-    background: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    background: #1a243b;
     color: white;
     border: none;
     border-radius: 5px;

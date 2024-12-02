@@ -1,6 +1,5 @@
 let gameSelect = document.getElementById('gameSelect');
 
-// Create a function for the confetti effect
 const triggerConfetti = () => {
     // Left side confetti
     confetti({
@@ -16,7 +15,7 @@ const triggerConfetti = () => {
             spread: 70,
             origin: { x: 1, y: 0.6 },
         });
-    }, 50); // 50ms delay helps ensure both sides trigger properly
+    }, 50);
 };
 
 let generateGameCards = () => {
@@ -54,7 +53,7 @@ let incrementCartAmount = (gameId) => {
     }
     
     window.updateCart(window.cart);
-    triggerConfetti(); // Call the confetti function
+    triggerConfetti();
 };
 
 generateGameCards();
