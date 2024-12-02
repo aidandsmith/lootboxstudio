@@ -1,48 +1,60 @@
 let gameSelect = document.getElementById('gameSelect');
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-let generateGameCards = () => {
-    return (gameSelect.innerHTML = gameCardData
-        .map((game)=>{
-            let {gameId, name, image, description} = game;
-            return ` 
-            <div class="item">
-            <div class="details">
-                <img src="${image}" alt="${name}">
-                <h3>${name}</h3>
-                <p>${description}</p>
-            </div>
-            <div class="buttons">
-                <button onclick="incrementCartAmount('${gameId}')">Select</button>
-            </div>
-        </div>
-        `;
-        }).join(''));
+// Create a function for the confetti effect
+const triggerConfetti = () => {
+    // Left side confetti
+    confetti({
+        particleCount: 200,
+        spread: 70,
+        origin: { x: 0, y: 0.6 },
+    });
+    
+    // Right side confetti with a slight delay
+    setTimeout(() => {
+        confetti({
+            particleCount: 200,
+            spread: 70,
+            origin: { x: 1, y: 0.6 },
+        });
+    }, 50); // 50ms delay helps ensure both sides trigger properly
 };
 
-generateGameCards();
+let generateGameCards = () => {
+    if (gameSelect) {
+        gameSelect.innerHTML = gameCardData
+            .map((game) => {
+                let {gameId, name, image, description, price} = game;
+                return ` 
+                <div class="item">
+                    <div class="details">
+                        <img src="${image}" alt="${name}">
+                        <h3>${name}</h3>
+                        <p>${description}</p>
+                        <p class="price">$${price}</p>
+                    </div>
+                    <div class="buttons gameCardButton">
+                        <button onclick="incrementCartAmount('${gameId}')">Add to Cart</button>
+                    </div>
+                </div>
+                `;
+            }).join('');
+    }
+};
 
 let incrementCartAmount = (gameId) => {
-    let selectedGame = gameCardData.find(game => game.gameId === gameId);
-    let searchCart = cart.find((game) => game.id === gameId);
+    let searchCart = window.cart.find((game) => game.id === gameId);
 
     if (searchCart === undefined) {
-        cart.push({
+        window.cart.push({
             id: gameId,
             item: 1,
         });
     } else {
         searchCart.item += 1;
     }
-    localStorage.setItem('cart', JSON.stringify(cart));
-    calculateCartTotal();
+    
+    window.updateCart(window.cart);
+    triggerConfetti(); // Call the confetti function
 };
 
-
-let calculateCartTotal = () => {
-    let cartIcon = document.getElementById('cartAmount');
-    cartIcon.innerHTML = cart.map(game => game.item).reduce((a, b) => a + b, 0);
-};
-
-calculateCartTotal();
+generateGameCards();

@@ -22,9 +22,22 @@ let gameCardData = [
     },
 ];
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-let calculateCartTotal = () => {
-    let cartIcon = document.getElementById('cartAmount');
-    cartIcon.innerHTML = cart.map(game => game.item).reduce((a, b) => a + b, 0);
+// Global cart management
+window.cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+window.updateCart = (newCart) => {
+    window.cart = newCart;
+    localStorage.setItem('cart', JSON.stringify(newCart));
+    updateCartDisplay();
 };
-calculateCartTotal();
+
+window.updateCartDisplay = () => {
+    const cartAmount = document.getElementById('cartAmount');
+    if (cartAmount) {
+        const total = window.cart.reduce((sum, item) => sum + item.item, 0);
+        cartAmount.textContent = total;
+    }
+};
+
+// Initialize cart display
+updateCartDisplay();

@@ -15,6 +15,7 @@
                 <div class="navImage">
                     <img src="img/lootboxLogo.png" alt="" width="200">
                 </div>
+
                 <div class="navLinks">
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
@@ -28,23 +29,25 @@
                 <div class="navButton">
                     <a href="games-select.html">Buy Now</a>
                 </div>
-                <div class="cart">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <div class="cartAmount" id="cartAmount">0</div>
-                </div>
+                <a href="checkout-cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="cartAmount" id="cartAmount">0</div>
+                    </div>
+                </a>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="GameSelectText">
             <h2>Are you ready to dive into the world of LootBox Studios?</h2>
             <p>Select a game to begin your adventure!</p>
         </section>
 
-        <div class="gameSelect" id="gameSelect">
-
-        </div>
+        <div class="gameSelect" id="gameSelect"></div>
     </main>
+
     <footer>
         <div class="footerOne">
             <img src="img/lootboxLogo.png" alt="" width="200">
@@ -59,26 +62,6 @@
 
     <script src="js/games.js"></script>
     <script src="js/gameselect.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-
-    <script>
-        const GameCardBtn = document.querySelectorAll('.gameCardButton button');
-        GameCardBtn.forEach(btn => {
-            btn.addEventListener('click', () => {
-                confetti({
-                    particleCount: 200,
-                    spread: 70,
-                    origin: { x: 0, y: 0.6 },
-                });
-                confetti({
-                    particleCount: 200,
-                    spread: 70,
-                    origin: { x: 1, y: 0.6 },
-                });
-                
-            });
-        });
-    </script>
 </body>
 </html>
