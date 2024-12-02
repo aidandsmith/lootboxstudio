@@ -28,6 +28,10 @@
                 <div class="navButton">
                     <a href="games-select.html">Buy Now</a>
                 </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <div class="cartAmount" id="cartAmount">0</div>
+                </div>
             </div>
         </nav>
     </header>
@@ -37,39 +41,8 @@
             <p>Select a game to begin your adventure!</p>
         </section>
 
-        <div class="gameSelectDivider">
-             <section class="gameCardContainer">
-                <div class="gameCard">
-                    <img src="https://placehold.co/400x400" alt="Game 1">
-                    <h3>King Kong vs The World</h3>
-                    <p>King Kong vs The World is a story-driven game where you battle King Kong in 2035, facing intense challenges to save humanity from chaos.</p>
-                </div>
-                <div class="gameCardButton">
-                    <button>Select</button>
-                </div>
-            </section>
+        <div class="gameSelect" id="gameSelect">
 
-            <section class="gameCardContainer">
-                <div class="gameCard">
-                    <img src="https://placehold.co/400x400" alt="Game 2">
-                    <h3>Sea Otter vs Communist Zombies</h3>
-                    <p>Sea Otter vs Communist Zombies is a 90s-style 2D platformer with intense boss battles and retro visuals. A must-play action adventure!</p>
-                </div>
-                <div class="gameCardButton">
-                    <button>Select</button>
-                </div>
-            </section>
-
-            <section class="gameCardContainer">
-                <div class="gameCard">
-                    <img src="https://placehold.co/400x400" alt="Game 2">
-                    <h3>Clyde the Capybara: Guardian of the Riverbank</h3>
-                    <p>Clyde the capybara defends his Amazon River bank from predators, battling jaguars, anacondas, and pesky pelicans.</p>
-                </div>
-                <div class="gameCardButton">
-                    <button>Select</button>
-                </div>
-            </section>
         </div>
     </main>
     <footer>
@@ -83,6 +56,9 @@
             <a href="">Newsletter</a>
         </div>
     </footer>
+
+    <script src="js/games.js"></script>
+    <script src="js/gameselect.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
