@@ -32,7 +32,7 @@ nav a {
 }
 
 .navButton {
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 .navLinks a {
@@ -45,16 +45,34 @@ nav a {
 
 .navRight {
   display: flex;
-  justify-content: end;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.navButton a {
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.navButton a:hover {
+  opacity: 0.9;
 }
 
 .cart {
   position: relative;
   background-color: #fff;
   color: #111;
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 4px;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cartAmount {
