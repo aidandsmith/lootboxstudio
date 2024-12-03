@@ -1,0 +1,59 @@
+
+
+body {
+    font-size: 1.2rem;
+}
+
+.gameHeader {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.gameHeader h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+}
+
+.twoGames {
+    width: 100%;
+    background-color: #1a243b;
+    display: flex;
+    justify-content: center;    
+}
+
+.about, .description {
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+    font-size: 2rem;
+}
+
+.requirements {
+    font-size: 20px;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+}
+
+.gameOne, .gameTwo {
+    background-color: #253049;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #15514a;
+    border-radius: 20px;
+}
+
+.gameOne h2, .gameTwo h2 {
+    font-size: 2.4rem;
+    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+    color: transparent;
+    background-clip: text;
+}
+
+
