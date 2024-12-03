@@ -1,0 +1,166 @@
+body {
+  background-color: #1a243b;
+  color: white;
+}
+
+body main {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+body a {
+  color: rgb(58, 213, 154);
+}
+
+h1,
+h2 {
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
+  margin: 1rem 0;
+}
+p {
+  line-height: 1.5rem;
+}
+/* =========== Timer =========== */
+#timer {
+  font-size: 3rem;
+  border: solid 3px #4c326b;
+  border-radius: 9px;
+  text-align: center;
+  margin-top: 2rem;
+}
+#time-unit {
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  font-weight: bold;
+  background-clip: text;
+  font-size: 2rem;
+}
+/* =============Main ================== */
+#coming {
+  margin-top: 0;
+}
+#jan15 {
+  color: #e9c46a;
+  font-size: 1.5rem;
+}
+
+.right-align {
+  text-align: right;
+}
+
+#capy-cover {
+  display: block;
+  height: 22rem;
+  width: auto;
+  margin: 2rem auto 1rem auto;
+}
+
+#pre-order {
+  text-align: center;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+#immerse {
+  margin-top: 2rem;
+}
+
+/* =========== Slideshow =========== */
+/* Slideshow container */
+.slideshow-container {
+  width: 40rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.game-slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.game-slides img {
+  width: 100%;
+}
