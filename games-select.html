@@ -6,7 +6,7 @@
     <title>LootBox Studios | Games</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/gameselect.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -15,6 +15,7 @@
                 <div class="navImage">
                     <img src="img/lootboxLogo.png" alt="" width="200">
                 </div>
+
                 <div class="navLinks">
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
@@ -28,50 +29,25 @@
                 <div class="navButton">
                     <a href="games-select.html">Buy Now</a>
                 </div>
+                <a href="checkout-cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="cartAmount" id="cartAmount">0</div>
+                    </div>
+                </a>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="GameSelectText">
             <h2>Are you ready to dive into the world of LootBox Studios?</h2>
             <p>Select a game to begin your adventure!</p>
         </section>
 
-        <div class="gameSelectDivider">
-             <section class="gameCardContainer">
-                <div class="gameCard">
-                    <img src="https://placehold.co/400x400" alt="Game 1">
-                    <h3>King Kong vs The World</h3>
-                    <p>King Kong vs The World is a story-driven game where you battle King Kong in 2035, facing intense challenges to save humanity from chaos.</p>
-                </div>
-                <div class="gameCardButton">
-                    <button>Select</button>
-                </div>
-            </section>
-
-            <section class="gameCardContainer">
-                <div class="gameCard">
-                    <img src="https://placehold.co/400x400" alt="Game 2">
-                    <h3>Sea Otter vs Communist Zombies</h3>
-                    <p>Sea Otter vs Communist Zombies is a 90s-style 2D platformer with intense boss battles and retro visuals. A must-play action adventure!</p>
-                </div>
-                <div class="gameCardButton">
-                    <button>Select</button>
-                </div>
-            </section>
-
-            <section class="gameCardContainer">
-                <div class="gameCard">
-                    <img src="https://placehold.co/400x400" alt="Game 2">
-                    <h3>Clyde the Capybara: Guardian of the Riverbank</h3>
-                    <p>Clyde the capybara defends his Amazon River bank from predators, battling jaguars, anacondas, and pesky pelicans.</p>
-                </div>
-                <div class="gameCardButton">
-                    <button>Select</button>
-                </div>
-            </section>
-        </div>
+        <div class="gameSelect" id="gameSelect"></div>
     </main>
+
     <footer>
         <div class="footerOne">
             <img src="img/lootboxLogo.png" alt="" width="200">
@@ -84,25 +60,8 @@
         </div>
     </footer>
 
+    <script src="js/games.js"></script>
+    <script src="js/gameselect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-
-    <script>
-        const GameCardBtn = document.querySelectorAll('.gameCardButton button');
-        GameCardBtn.forEach(btn => {
-            btn.addEventListener('click', () => {
-                confetti({
-                    particleCount: 200,
-                    spread: 70,
-                    origin: { x: 0, y: 0.6 },
-                });
-                confetti({
-                    particleCount: 200,
-                    spread: 70,
-                    origin: { x: 1, y: 0.6 },
-                });
-                
-            });
-        });
-    </script>
 </body>
 </html>

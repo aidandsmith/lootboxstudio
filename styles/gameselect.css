@@ -22,10 +22,10 @@
 }
 
 
-.gameSelectDivider {
+.gameSelect {
     margin-top: 5vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -33,7 +33,7 @@
     margin: 0 auto;
 }
 
-.gameCardContainer {
+.item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@
     margin-bottom: 20px;    
 }
 
-.gameCard {
+.details {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,14 +55,14 @@
     color: #ffffff;
 }
 
-.gameCardButton {
+.buttons {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 
 }
 
-.gameCardButton button {
+.buttons button {
     background-image:linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: #fff;
     border-radius: 10px;

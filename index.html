@@ -6,6 +6,7 @@
     <title>LootBox Studios | Home</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -30,64 +31,71 @@
                 <div class="navButton">
                     <a href="games-select.html">Buy Now</a>
                 </div>
+                <a href="checkout-cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="cartAmount" id="cartAmount">0</div>
+                    </div>
+                </a>
             </div>
         </nav>
     </header>
 
     <section class="header">
-        <div class="heroImage">
-            <div class="heroText">
+        <div class="welcomeSection">
             <h1>Welcome to LootBox Games</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione repellendus at vel quos, est reprehenderit delectus quae suscipit error similique ipsam adipisci necessitatibus aliquam unde dolorum, totam eveniet? Unde!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum expedita impedit cumque, nobis possimus quos accusantium porro temporibus aperiam repellendus quisquam, accusamus dolore. Blanditiis, laborum qui? Vero fugiat optio quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fuga quae eligendi ut iste, et quidem quos. In officiis dicta at laborum magnam ratione accusamus. Aliquid soluta nisi eaque quia.
-                </p>
-            </div>
+                <p>At LootBox games, we are a passionate team of indie game developers focused on crafting unique and engaging narratives that our audience can dive into. Our studio is passionate about only creating games that we would love to play ourselves. This commitment drives us to push the boundaries of what is possible through our blend of creative talents as well as technical abilities. </p>
         </div>
     </section>
 
-    <section class="newRelease">
-        <div class="newReleaseText">
-        <h2>Discover Our Latest Release</h2>
+    <section class="homeInformation">
+        <div class="homeOneText">
+        <h2>A Small Studio with Big Ideas</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum molestias quidem, suscipit maxime ea harum sunt aliquid explicabo labore. Ratione, eligendi delectus! Dolor voluptatibus ad id dolore asperiores ab.</p>
         </div>
-        <div class="newReleaseImage">
+        <div class="homeOneImage">
             <img src="img/otter0.jpg" alt="" width="400">
         </div>
-    </section>
 
-    <section class="oldGame">
-        <div class="oldGameText">
-            <h2>Game 2</h2>
+        <div class="homeTwoImage">
+            <img src="img/otter1.jpg" alt="" width="400">
+        </div>
+        <div class="homeTwoText">
+            <h2>Boundless Adventures</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi delectus consequatur assumenda veniam tempore ducimus unde quae, iste voluptatum voluptates quod error recusandae officia ullam quasi nisi optio enim quaerat?</p>
         </div>
-
-        <div class="oldGameImage">
-            <img src="" alt="">
-        </div>
     </section>
 
-    <section class="allGames">
-        <h2>Explore all our games</h2>
-        <article class="gameOne">
-            <h3>Game 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam, natus itaque tempora harum, id omnis, repellat numquam culpa neque ut! Reprehenderit corrupti velit consequuntur nulla ad a nihil perferendis.</p>
-        </article>
-        
-        <article class="gameTwo">
-            <h3>Game 2</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis culpa corrupti ab officia nulla, sequi aspernatur. Earum libero iste quae ab quod. Reiciendis, adipisci quidem? Natus deleniti quos beatae?
-        </article>
+    <section class="homeGames">
+        <div class="homeGamesHeader">
+            <h2>Explore our game catalogue</h2>
+        </div>
+        <div class="homeGamesCards">
+            <article class="gameOne">
+                <h3>Game 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam, natus itaque tempora harum, id omnis, repellat numquam culpa neque ut! Reprehenderit corrupti velit consequuntur nulla ad a nihil perferendis.</p>
+            </article>
+            
+            <article class="gameTwo">
+                <h3>Game 2</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis culpa corrupti ab officia nulla, sequi aspernatur. Earum libero iste quae ab quod. Reiciendis, adipisci quidem? Natus deleniti quos beatae?
+            </article>
 
-        <article class="gameThree">
-            <h3>Game 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolorum quibusdam cumque quam, molestias dolores exercitationem, aliquam libero adipisci harum blanditiis dolore odio? Tempora eum adipisci iusto, nam dolorem ipsam!</p>
-        </article>
+            <article class="gameThree">
+                <h3>Game 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dolorum quibusdam cumque quam, molestias dolores exercitationem, aliquam libero adipisci harum blanditiis dolore odio? Tempora eum adipisci iusto, nam dolorem ipsam!</p>
+            </article>
+        </div>
     </section>
 
     <section class="banner">
-        <h2>Call To Action</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque omnis quia animi odit, accusamus reprehenderit dolores, fugiat eaque velit repudiandae sint odio quas nihil. Rerum id assumenda optio quis iste?</p>
-        <button>Buy Now</button>
+        <div class="bannerText">
+            <h2>Cyber Sale</h2>
+            <p>Don't miss out on our biggest sale of the year</p>
+        </div>
+        <div class="bannerButton">
+            <button>Buy Now</button>
+        </div>
     </section>
 
     <footer>
@@ -103,4 +111,6 @@
     </footer>
 
 </body>
+<script src="js/games.js"></script>
+<script src="js/gameselect.js"></script>
 </html>
