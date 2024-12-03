@@ -55,6 +55,12 @@
     color: #ffffff;
 }
 
+.details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .buttons {
     display: flex;
     justify-content: center;
