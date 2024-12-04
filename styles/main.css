@@ -23,6 +23,7 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
+
 }
 
 .navLinks {
@@ -37,6 +38,12 @@ nav a {
 
 .navLinks a {
   margin: 1rem;
+}
+
+.navLinks a:hover {
+  color: transparent;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  background-clip: text;
 }
 
 .navLeft {

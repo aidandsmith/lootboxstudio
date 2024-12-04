@@ -1,14 +1,9 @@
-body {
-  background-color: #1a243b;
-  color: white;
-}
-
 body main {
   max-width: 80ch;
   margin: 0 auto;
 }
 
-body a {
+.supportLink {
   color: rgb(58, 213, 154);
 }
 

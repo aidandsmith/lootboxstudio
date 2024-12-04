@@ -8,7 +8,7 @@ body main {
   margin: 0 auto;
 }
 
-body a {
+.supportLink {
   color: rgb(58, 213, 154);
 }
 
