@@ -25,6 +25,12 @@
     justify-content: flex-start;
 }
 
+@media (max-width: 1024px) {
+    .checkoutCartItems {
+        justify-content: center;
+    }
+}
+
 .checkoutCartItems h4 {
     margin-top: 10px;
     font-size: 18px;

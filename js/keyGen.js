@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const gameKey = document.getElementById('gameKey');
     const copyButton = document.getElementById('copyButton');
 
-
+    window.cart = [];
+    if (typeof window.updateCart === 'function') {
+        window.updateCart(window.cart);
+    }
 
     const generateKey = () => {
         return 'xxxx-xxxx-xxxx-xxxx'.replace(/[x]/g, () => {
@@ -25,6 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(() => alert('Key copied to clipboard!'))
             .catch(err => console.error('Failed to copy key: ', err))
     });
-
 });
 
