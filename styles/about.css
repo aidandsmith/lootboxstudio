@@ -2,31 +2,14 @@
 /* About Section */
 
 /* Intro */
-.aboutSummary {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.aboutText {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10rem;
-    margin-top: 4rem;
+.aboutSummary{
+    max-width: 80ch;
+    margin: 0 auto;
 }
 
 .aboutText p {
-    font-size: 1.4rem;
-    line-height: 2rem;
-}
-
-.aboutImage {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.6rem;
+    line-height: 3rem;
 }
 
 .aboutSummary h1, .rewards h2 {
@@ -34,6 +17,7 @@
     color: transparent;
     background-clip: text;
     font-size: 4rem;
+    text-align: center;
 }
 
 /* Rewards */
@@ -103,6 +87,7 @@
     border-radius: 10px;
     padding: 2rem;
     margin: 2rem;
+    border: 2px solid #15514a;
 }
 
 .aidan h3, .brody h3, .austin h3 {
@@ -115,4 +100,16 @@
 
 .aidan img, .brody img, .austin img {
     border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 1010px) {
+    .teamMembers {
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
