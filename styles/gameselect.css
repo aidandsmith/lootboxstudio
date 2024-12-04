@@ -33,6 +33,12 @@
     margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+    .gameSelect {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .item {
     display: flex;
     flex-direction: column;
@@ -79,3 +85,6 @@
     margin-bottom: 20px;
 }
 
+.buttons button:hover {
+    transform: scale(1.05);
+}
