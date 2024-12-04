@@ -10,6 +10,12 @@ body {
     margin: 1rem 0;
 }
 
+@media (max-width: 1024px) {
+    .gameHeader {
+        text-align: center;
+    }
+}
+
 .gameHeader h1 {
     font-size: 3rem;
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
@@ -22,6 +28,26 @@ body {
     background-color: #1a243b;
     display: flex;
     justify-content: center;    
+}
+
+@media (max-width: 1024px) {
+    .twoGames {
+        flex-direction: column;
+    }
+}
+
+.gameImage {
+    width: 50%;
+}
+
+.gameImage img {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .gameImage {
+        width: 100%;
+    }
 }
 
 .about, .description {
