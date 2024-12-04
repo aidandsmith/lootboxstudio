@@ -4,18 +4,21 @@
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
     background-clip: text;
-    font-size: 7rem;
+    font-size: 5rem;
     text-align: center;
 }
 
 .header p {
     font-size: 1.6rem;
-    min-width: 800px;
-
 }
 
 .welcomeSection {
-    margin: 10rem;
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+.welcomeSection p {
+    line-height: 1.6;
 }
 
 .introStyle {
@@ -29,6 +32,8 @@
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: auto;
+    max-width: 140ch;
+    margin: 0 auto;
 }
 
 .homeOneText {
@@ -63,7 +68,7 @@
     grid-column: 3/7;
     grid-row: 1/3;
     float: left;
-    margin: 3rem;
+    margin: 2rem;
     display: flex;
     align-items: center;
 }
@@ -120,8 +125,8 @@
 
 /* Games Section */
 .homeGames {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    max-width: 180ch;
+    margin: 0 auto;
 }
 
 .homeGamesHeader h2 {
@@ -145,15 +150,18 @@
 
 .homeGamesCards {
     display: flex;
-    margin: 2rem;
 }
 
 .gameOne, .gameTwo, .gameThree {
     background-color: #253049;
-    border: 1px solid #253049;
+    border: 1px solid #15514a;
     border-radius: 5px;
     padding: 2rem;
     margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
 }
 
 .gameOne:hover, .gameTwo:hover, .gameThree:hover {
@@ -164,34 +172,28 @@
 .gameOne img, .gameTwo img, .gameThree img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    border: 4px solid #1a243b;
 }
 
-/* Call To Action Section */
-
-.banner {
-    background-color: #4c326b;
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    padding: 1.6rem;
+.homeGames a {
+    text-decoration: none;
 }
 
-.bannerText h2 {
-    font-size: 2rem;
+.homeGames p {
+    color: white;
 }
 
-.bannerButton {
-    display: flex;
+@media only screen and (max-width: 1090px) {
+
+.homeGamesCards {
+    flex-direction: column;
     align-items: center;
-    margin: 0 2rem;
-}
+    margin: 0 auto;
+    }
 
-.bannerButton button {
-    background-color: #e9c46a;
-    padding: 1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border: #253049 2px solid;
-    border-radius: 5px;
+    .gameOne, .gameTwo, .gameThree {
+        max-width: 600px;
+    }
+
 }
