@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script defer src="js/form.js"></script>
 </head>
+
 <body>
 
     <header>
@@ -19,16 +21,14 @@
                         <img src="img/lootboxLogo.png" alt="" width="200">
                     </a>
                 </div>
-
-                <div class="navLinks">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="games.html">Games</a>
-                    <a href="upcoming.html">Upcoming Releases</a>
-                    <a href="faqs.html">Support</a>
-                </div>
             </div>
-
+            <div class="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="games.html">Games</a>
+                <a href="upcoming.html">Upcoming Releases</a>
+                <a href="faqs.html">Support</a>
+            </div>
             <div class="navRight">
                 <div class="navButton">
                     <a href="games-select.html">Buy Now</a>
@@ -45,83 +45,47 @@
     <h1>Complete your purchase</h1>
     <form class="user-info" action="/">
         <div class="input-control">
-            <label class= "form-label" for="clientmail">Email</label>
-            <input
-                type="text" 
-                name="email" 
-                id="clientmail"
-                placeholder="Enter your email">
+            <label class="form-label" for="clientmail">Email</label>
+            <input type="text" name="email" id="clientmail" placeholder="Enter your email">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <label class= "form-label" for="password">Password</label>
-            <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Enter a password">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter a password">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <label class= "form-label" for="password2">Password again</label>
-            <input
-                type="password"
-                name="password2"
-                id="password2"
-                placeholder="Enter a password">
+            <label class="form-label" for="password2">Password again</label>
+            <input type="password" name="password2" id="password2" placeholder="Enter a password">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <label class= "form-label" for="firstname">First Name</label>
-            <input
-                type="text" 
-                name="firstname" 
-                id="firstname"
-                placeholder="Enter your First Name">
+            <label class="form-label" for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your First Name">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <label class= "form-label" for="lastname">Last Name</label>
-            <input
-                type="text" 
-                name="lastname" 
-                id="lastname"
-                placeholder="Enter your Last Name">
+            <label class="form-label" for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <label class= "form-label" for="phone">Phone Number</label>
-            <input
-                type="text" 
-                name="phone" 
-                id="phone"
-                title="Please enter a valid phone number"
+            <label class="form-label" for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" title="Please enter a valid phone number"
                 placeholder="Enter your Phone Number">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <label class= "form-label" for="ccn">Credit Card Information</label>
-            <input class="form-input"
-                id="ccn" 
-                type="tel" 
-                inputmode="numeric" 
-                placeholder="xxxx xxxx xxxx xxxx">
+            <label class="form-label" for="ccn">Credit Card Information</label>
+            <input class="form-input" id="ccn" type="tel" inputmode="numeric" placeholder="xxxx xxxx xxxx xxxx">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <input class="form-input"
-                type="tel"
-                name="cvv"
-                id="cvv"
-                placeholder="Enter your CVV">
+            <input class="form-input" type="tel" name="cvv" id="cvv" placeholder="Enter your CVV">
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <input class="form-input"
-                type="tel"
-                name="expiry"
-                id="expiry"
-                placeholder="Enter your Expiry Date">
+            <input class="form-input" type="tel" name="expiry" id="expiry" placeholder="Enter your Expiry Date">
             <div class="error"></div>
         </div>
         <button type="submit" class="form-btn"> Complete Purchase</button>
@@ -141,4 +105,5 @@
 </body>
 <script src="js/games.js"></script>
 <script src="js/gameselect.js"></script>
+
 </html>
