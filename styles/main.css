@@ -14,10 +14,9 @@ body {
 nav {
   background-color: #0f172a;
   display: flex;
-  /* austin added: V */
   flex-wrap: wrap;
 
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
 }
@@ -30,9 +29,7 @@ nav a {
 }
 
 .navLinks {
-  /* austin changed: flex>>> inline-block */
   display: inline-block;
-
   justify-content: center;
   margin-left: 2rem;
 }
@@ -47,14 +44,13 @@ nav a {
 
 .navLeft {
   display: flex;
-  /* austin added: v */
   align-items: center;
 }
 
 .navRight {
   display: flex;
-  align-items: center;
-  margin-right: 1rem;
+  align-items: baseline;
+  margin: 1rem;
 }
 
 .navButton a {
