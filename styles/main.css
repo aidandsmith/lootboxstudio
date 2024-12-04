@@ -103,6 +103,13 @@ footer {
   justify-content: center;
 }
 
+@media (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 footer a {
   margin: 0 2rem;
   text-decoration: none;
@@ -113,6 +120,14 @@ footer a {
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 1024px) {
+  .footerOne {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
 .footerTwo {
   display: flex;
   align-items: center;
