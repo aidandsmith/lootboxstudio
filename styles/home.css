@@ -206,6 +206,12 @@
         display: flex;
         flex-direction: column;
     }
+
+    .welcomeSection {
+        margin: 2rem;
+    }
+
+
 }
 
 
