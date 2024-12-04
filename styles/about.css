@@ -112,4 +112,10 @@
         width: fit-content;
         margin: 0 auto;
     }
+
+    @media only screen and (max-width: 720px) {
+        .aboutContent {
+            margin: 2rem;
+        }
+    }
 }
