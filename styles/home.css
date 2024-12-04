@@ -111,7 +111,7 @@
     animation: spinner 10s linear infinite;
 }
 
-.homeInformation h2 {
+.homeInformation h3 {
     font-size: 3rem;
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
@@ -142,6 +142,7 @@
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
     background-clip: text;
+    max-width: 400px;
 }
 
 .homeGamesCards p {
@@ -184,16 +185,30 @@
     color: white;
 }
 
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1433px) {
+    .homeGamesCards {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        }
+    
+        .gameOne, .gameTwo, .gameThree {
+            max-width: 600px;
+        }
 
-.homeGamesCards {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    }
-
-    .gameOne, .gameTwo, .gameThree {
-        max-width: 600px;
-    }
-
+        .homeInformation h3 {
+            font-size: 2rem;
+        }
 }
+
+@media only screen and (max-width: 720px) {
+    .homeInformation {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
