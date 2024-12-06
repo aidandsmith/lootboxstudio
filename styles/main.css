@@ -21,6 +21,11 @@ nav {
   padding: 1rem;
 }
 
+nav img {
+  width: 12.5rem;
+  height: auto;
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -104,6 +109,11 @@ footer {
   padding: 3rem;
   display: flex;
   justify-content: center;
+}
+
+footer img {
+  width: 12.5rem;
+  height: auto;
 }
 
 @media (max-width: 1024px) {
