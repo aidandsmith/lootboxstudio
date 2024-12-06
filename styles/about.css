@@ -1,121 +1,127 @@
-
 /* About Section */
 
 /* Intro */
-.aboutSummary{
-    max-width: 80ch;
-    margin: 0 auto;
+.aboutSummary {
+  max-width: 80ch;
+  margin: 0 auto;
 }
 
 .aboutText p {
-    font-size: 1.6rem;
-    line-height: 3rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
 }
 
-.aboutSummary h1, .rewards h2 {
-    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-    color: transparent;
-    background-clip: text;
-    font-size: 4rem;
-    text-align: center;
+.aboutSummary h1,
+.awards h2 {
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
+  font-size: 4rem;
+  text-align: center;
 }
 
-/* Rewards */
-.rewards {
-    display: flex;
-    flex-direction: column;
+/* awards */
+.awards {
+  display: flex;
+  flex-direction: column;
 }
 
-.rewardsInformation {
-    grid-auto-columns: 2/3;
-    grid-auto-rows: 2/3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+.awardsInformation {
+  /* grid-auto-columns: 2/3;
+  grid-auto-rows: 2/3; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* justify-content: space-evenly; */
+  /* margin-top: 2rem; */
 }
 
-.rewardsInformation img {
-    filter: brightness(0) invert(1);
+.awardsInformation img {
+  filter: brightness(0) invert(1);
+  width: 9rem;
+  height: auto;
 }
 
-.rewardsInformation p {
-    font-size: 1.4rem;
+.awardsInformation p {
+  font-size: 1.4rem;
 }
 
-.rewards {
-    margin: 2rem;
+.awardsText {
+  /* text-align: center; */
 }
 
-.rewardsText {
-    text-align: center;
+.award {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
 }
-
-.rewardOne, .rewardTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /* Team */
 
 .team {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .teamHeader {
-    text-align: center;
+  text-align: center;
 }
 
 .teamHeader h2 {
-    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-    color: transparent;
-    background-clip: text;
-    font-size: 4rem;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
+  font-size: 4rem;
 }
 
 .teamMembers {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.aidan, .brody, .austin {
-    background-color: #253049;
-    border: 1px solid #0f172a;
-    border-radius: 10px;
-    padding: 2rem;
-    margin: 2rem;
-    border: 2px solid #15514a;
+.aidan,
+.brody,
+.austin {
+  background-color: #253049;
+  border: 1px solid #0f172a;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem;
+  border: 2px solid #15514a;
 }
 
-.aidan h3, .brody h3, .austin h3 {
-    font-size: 1.6rem;
+.aidan h3,
+.brody h3,
+.austin h3 {
+  font-size: 1.6rem;
 }
 
-.aidan p, .brody p, .austin p {
-    color: rgb(121, 121, 230);
+.aidan p,
+.brody p,
+.austin p {
+  color: rgb(121, 121, 230);
 }
 
-.aidan img, .brody img, .austin img {
-    border-radius: 5px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.aidan img,
+.brody img,
+.austin img {
+  border-radius: 5px;
+  width: 14rem;
+  height: auto;
+  object-fit: cover;
 }
-
 
 @media only screen and (max-width: 1010px) {
-    .teamMembers {
-        flex-direction: column;
-        width: fit-content;
-        margin: 0 auto;
-    }
+  .teamMembers {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+  }
 
-    @media only screen and (max-width: 720px) {
-        .aboutContent {
-            margin: 2rem;
-        }
+  @media only screen and (max-width: 720px) {
+    .aboutContent {
+      margin: 2rem;
     }
+  }
 }
