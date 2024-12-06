@@ -27,7 +27,7 @@ body {
   background-color: #1a243b;
   display: flex;
   /* flex-wrap: wrap; */
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .gameImage {
@@ -64,6 +64,7 @@ body {
 
 .gameOne,
 .gameTwo {
+  max-width: 90ch;
   background-color: #253049;
   padding: 2rem;
   margin: 1rem;
@@ -96,6 +97,7 @@ body {
 @media (max-width: 1024px) {
   .twoGames {
     flex-direction: column;
+    align-items: center;
   }
   .gameOne,
   .gameTwo {
