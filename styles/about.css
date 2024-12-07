@@ -1,8 +1,3 @@
-/* About Section */
-/* main {
-  max-width: 80ch;
-  margin: 0 auto;
-} */
 /* Intro */
 
 /* .aboutText p {
@@ -15,17 +10,17 @@
 } */
 
 /* awards */
-/* .awards {
-  display: flex;
-  flex-direction: column;
-} */
+.awards {
+  margin-top: 3rem;
+}
 
 .awardsInformation {
   /* grid-auto-columns: 2/3;
   grid-auto-rows: 2/3; */
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* justify-content: center; */
   justify-content: space-evenly;
   /* margin-top: 2rem; */
 }
@@ -37,7 +32,8 @@
 }
 
 .awardsInformation p {
-  /* font-size: 1.4rem; */
+  font-size: 1rem;
+  line-height: 0;
 }
 
 .awardsText {
@@ -46,6 +42,7 @@
 
 .award {
   display: flex;
+  max-width: 17rem;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
@@ -54,7 +51,7 @@
 /* Team */
 
 .team {
-  margin: 4rem auto;
+  margin: 3rem auto;
 }
 .teamHeader {
   text-align: center;
@@ -67,6 +64,9 @@
   justify-content: center;
 }
 
+.teamMembers p {
+  margin: 0;
+}
 .aidan,
 .brody,
 .austin {
@@ -94,8 +94,8 @@
 .brody img,
 .austin img {
   border-radius: 5px;
-  width: 14rem;
-  height: auto;
+  width: auto;
+  height: 14rem;
   object-fit: cover;
 }
 

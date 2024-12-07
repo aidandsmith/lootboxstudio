@@ -1,123 +1,130 @@
 .user-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #253049;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 100px;
-    color: #ffffff;
-    box-shadow: 0px 0px 20px linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132))
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #253049;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  color: #ffffff;
+  box-shadow: 0px 0px 20px linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
 }
 
 @media (max-width: 1024px) {
-    .user-info {
-        width: 80%;
-    }
+  .user-info {
+    width: 80%;
+  }
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    margin-top: 60px;
-    background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-    color: transparent;
-    background-clip: text;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-top: 60px;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
 }
 
 .form-label {
-     font-size: 1.2rem;
-     font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-input, select, textarea{
-    color: #ffffff;
+input,
+select,
+textarea {
+  color: #ffffff;
 }
 
-textarea:focus, input:focus {
-    color: #ffffff;
+textarea:focus,
+input:focus {
+  color: #ffffff;
 }
 
 .form-btn {
-    background-image:linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-    color: #fff;
-    border-radius: 10px;
-    padding: 15px 80px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 20px;
-    margin: 0 auto;
-    width: 60%;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px 80px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .form-btn:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media (max-width: 1440px) {
-    .form-btn {
-        width: 100%;
-    }
+  .form-btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1024px) {
-    .form-btn {
-        width: 90%;
-    }
+  .form-btn {
+    width: 90%;
+  }
 }
 
 .cc-box {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .input-control {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.input-control input, select {
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-    display: block;
-    border: none;
-    background-color: #1a243b;
+.input-control input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  border: none;
+  background-color: #1a243b;
 }
 
 .input-control input::placeholder {
-    color: #ffffff;
-    opacity: 0.5;
+  color: #ffffff;
+  opacity: 0.5;
 }
 
 .input-control select::placeholder {
-    color: #ffffff;
-    opacity: 0.5;
+  color: #ffffff;
+  opacity: 0.5;
 }
 
-.input-control input:focus, .input-control select:focus {
-    outline: 0;
+.input-control input:focus,
+.input-control select:focus {
+  outline: 0;
 }
 
-.input-control.success input, .input-control.success select {
-    border-color: #09c372;
+.input-control.success input,
+.input-control.success select {
+  border-color: #09c372;
 }
 
-.input-control.error input, .input-control.error select {
-    border-color: #ff3860;
+.input-control.error input,
+.input-control.error select {
+  border-color: #ff3860;
 }
 
 .input-control .error {
-    color: #ff3860;
-    font-size: 0.9rem;
-    height: 13px;
+  color: #ff3860;
+  font-size: 0.9rem;
+  height: 13px;
 }
