@@ -1,28 +1,12 @@
-/* Intro */
-
-/* .aboutText p {
-  line-height: 2rem;
-} */
-
-/* .aboutSummary h1,
-.awards h2 {
-  text-align: center;
-} */
-
 /* awards */
 .awards {
   margin-top: 3rem;
 }
 
 .awardsInformation {
-  /* grid-auto-columns: 2/3;
-  grid-auto-rows: 2/3; */
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
-  /* justify-content: center; */
   justify-content: space-evenly;
-  /* margin-top: 2rem; */
 }
 
 .awardsInformation img {
@@ -36,10 +20,6 @@
   line-height: 0;
 }
 
-.awardsText {
-  /* text-align: center; */
-}
-
 .award {
   display: flex;
   max-width: 17rem;
@@ -49,10 +29,10 @@
 }
 
 /* Team */
-
 .team {
   margin: 3rem auto;
 }
+
 .teamHeader {
   text-align: center;
 }
@@ -67,6 +47,11 @@
 .teamMembers p {
   margin: 0;
 }
+
+.teamMembers h3 {
+  margin: 0;
+}
+
 .aidan,
 .brody,
 .austin {
@@ -98,17 +83,3 @@
   height: 14rem;
   object-fit: cover;
 }
-
-/* @media only screen and (max-width: 1010px) {
-  .teamMembers {
-    flex-direction: column;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  @media only screen and (max-width: 720px) {
-    .aboutContent {
-      margin: 2rem;
-    }
-  }
-} */

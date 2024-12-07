@@ -68,7 +68,6 @@ p {
 }
 
 .requirements {
-  font-size: 20px;
   background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
   color: transparent;
   background-clip: text;
@@ -77,7 +76,8 @@ p {
 /* =========== Slideshow =========== */
 /* Slideshow container */
 .slideshow-container {
-  width: 40rem;
+  width: 100%;
+  max-width: 40rem;
   position: relative;
   margin: 0 auto;
 }
@@ -104,7 +104,7 @@ p {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
