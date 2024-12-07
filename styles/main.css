@@ -150,42 +150,27 @@ nav a {
 
 footer {
   background-color: #0f172a;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 footer img {
   width: 12.5rem;
   height: auto;
-}
-
-@media (max-width: 1024px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
+  margin-right: 1rem;
 }
 
 footer a {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
   text-decoration: none;
   color: white;
 }
 
-.footerOne {
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 1024px) {
-  .footerOne {
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-}
-
 .footerTwo {
   display: flex;
+
+  justify-content: center;
   align-items: center;
 }
