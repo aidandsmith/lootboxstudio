@@ -35,7 +35,7 @@ body main {
   grid-template-columns: repeat(3, 1fr);
   align-items: end;
   justify-content: center;
-  gap: 50px;
+  gap: 1rem;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -50,8 +50,8 @@ body main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  margin-bottom: 20px;
+  /* padding: 20px;
+  margin-bottom: 20px; */
 }
 
 .details {
