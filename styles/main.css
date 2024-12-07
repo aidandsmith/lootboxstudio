@@ -60,7 +60,6 @@ nav {
   background-color: #0f172a;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   align-items: center;
   padding: 1rem;
@@ -75,6 +74,8 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
+  margin: 0.5rem;
+  white-space: nowrap;
 }
 
 .navLinks {
@@ -84,11 +85,11 @@ nav a {
 }
 
 .navButton {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .navLinks a {
-  margin: 1rem;
+  display: inline-block;
 }
 
 .navLinks a:hover {
@@ -108,7 +109,7 @@ nav a {
   margin: 1rem;
 }
 
-.navButton a {
+.navButton {
   background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
   color: #fff;
   padding: 0.6rem 1.2rem;
@@ -118,7 +119,7 @@ nav a {
   transition: opacity 0.2s ease;
 }
 
-.navButton a:hover {
+.navButton:hover {
   opacity: 0.9;
 }
 
