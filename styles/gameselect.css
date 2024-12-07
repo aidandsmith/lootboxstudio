@@ -4,66 +4,37 @@ body main {
 
 .details h3 {
   font-size: 1.5rem;
+  min-height: 3.5rem;
 }
 
 .GameSelectText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1440px;
   text-align: center;
-  margin: 0 auto;
-}
-
-.GameSelectText h2 {
-  padding-top: 40px;
-  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-  color: transparent;
-  background-clip: text;
-  font-size: 4rem;
 }
 
 .GameSelectText p {
   font-size: 1.5rem;
-  color: #fff;
 }
 
 .gameSelect {
-  margin-top: 5vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-@media (max-width: 1024px) {
-  .gameSelect {
-    grid-template-columns: repeat(1, 1fr);
-  }
+  align-items: end;
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* padding: 20px;
-  margin-bottom: 20px; */
+  margin: 1rem;
+  max-width: 33rem;
 }
 
 .details {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
   background-color: #253049;
   border-radius: 10px;
-  padding: 20px;
+  padding: 1.5rem;
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
@@ -74,21 +45,26 @@ body main {
   border-radius: 10px;
 }
 
+.price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 1rem;
 }
 
 .buttons button {
   background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
   color: #fff;
   border-radius: 10px;
-  padding: 15px 80px;
-  font-size: 16px;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 .buttons button:hover {
