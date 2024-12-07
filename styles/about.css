@@ -1,30 +1,24 @@
 /* About Section */
-
-/* Intro */
-.aboutSummary {
+/* main {
   max-width: 80ch;
   margin: 0 auto;
-}
+} */
+/* Intro */
 
-.aboutText p {
-  font-size: 1.6rem;
-  line-height: 3rem;
-}
+/* .aboutText p {
+  line-height: 2rem;
+} */
 
-.aboutSummary h1,
+/* .aboutSummary h1,
 .awards h2 {
-  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-  color: transparent;
-  background-clip: text;
-  font-size: 4rem;
   text-align: center;
-}
+} */
 
 /* awards */
-.awards {
+/* .awards {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .awardsInformation {
   /* grid-auto-columns: 2/3;
@@ -32,7 +26,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   /* margin-top: 2rem; */
 }
 
@@ -43,7 +37,7 @@
 }
 
 .awardsInformation p {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 .awardsText {
@@ -54,29 +48,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 /* Team */
 
 .team {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin: 4rem auto;
 }
 .teamHeader {
   text-align: center;
 }
 
-.teamHeader h2 {
-  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-  color: transparent;
-  background-clip: text;
-  font-size: 4rem;
-}
-
 .teamMembers {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -86,8 +73,8 @@
   background-color: #253049;
   border: 1px solid #0f172a;
   border-radius: 10px;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   border: 2px solid #15514a;
 }
 
@@ -112,7 +99,7 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 1010px) {
+/* @media only screen and (max-width: 1010px) {
   .teamMembers {
     flex-direction: column;
     width: fit-content;
@@ -124,4 +111,4 @@
       margin: 2rem;
     }
   }
-}
+} */

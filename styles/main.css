@@ -5,30 +5,52 @@
 /* Global Styles */
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #1a243b;
   color: white;
 }
 
+body main {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 3.5rem;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
+  margin: 1rem 0;
 }
 
 h2 {
   font-size: 3rem;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
+  margin: 1rem 0;
 }
 
 h3 {
   font-size: 2.5rem;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
+  margin: 1rem 0;
 }
 
 h4 {
   font-size: 2rem;
+  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
+  color: transparent;
+  background-clip: text;
+  margin: 1rem 0;
 }
 
 p {
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 /* Nav Bar */
@@ -53,7 +75,6 @@ nav a {
   color: white;
 
   font-size: 1.2rem;
-
 }
 
 .navLinks {
