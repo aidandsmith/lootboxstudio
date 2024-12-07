@@ -14,7 +14,7 @@
 
 .accordion-header {
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 0.5rem;
   background-color: #1a243b;
   color: white;
@@ -25,7 +25,6 @@
 }
 
 .accordion p {
-  font-size: 1.2rem;
 }
 
 .accordion-content {
@@ -42,6 +41,5 @@
 .accordionIcon {
   float: right;
   color: rgb(58, 213, 154);
-  font-size: 1rem;
 }
 /* =============================== */
