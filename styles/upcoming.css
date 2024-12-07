@@ -1,26 +1,7 @@
-body {
-  background-color: #1a243b;
-  color: white;
-}
-
-body main {
-  max-width: 80ch;
-  margin: 0 auto;
-}
-
 .supportLink {
   color: rgb(58, 213, 154);
 }
 
-h1,
-h2 {
-  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-  color: transparent;
-  background-clip: text;
-}
-p {
-  line-height: 1.5rem;
-}
 /* =========== Timer =========== */
 #timer {
   font-size: 3rem;
@@ -46,10 +27,6 @@ p {
   font-size: 1.5rem;
 }
 
-.right-align {
-  text-align: right;
-}
-
 #capy-cover {
   display: block;
   height: 22rem;
@@ -63,8 +40,8 @@ p {
   margin-left: 0.5rem;
 }
 
-#immerse {
-  margin-top: 2rem;
+main h2 {
+  margin-top: 3rem;
 }
 
 .requirements {
@@ -134,6 +111,10 @@ p {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+#dot-center {
+  text-align: center;
 }
 
 .active,
