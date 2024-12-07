@@ -4,17 +4,13 @@
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
     background-clip: text;
-    font-size: 5rem;
     text-align: center;
-}
-
-.header p {
-    font-size: 1.6rem;
 }
 
 .welcomeSection {
     max-width: 80ch;
     margin: 0 auto;
+    margin-top: 4rem;
 }
 
 .welcomeSection p {
@@ -23,7 +19,7 @@
 
 .introStyle {
     color: #e9c46a;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 /* Home Information Section */
@@ -34,6 +30,7 @@
     grid-template-rows: auto;
     max-width: 140ch;
     margin: 0 auto;
+    margin-top: 4rem;
 }
 
 .homeOneText {
@@ -112,21 +109,17 @@
 }
 
 .homeInformation h3 {
-    font-size: 3rem;
+
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
     background-clip: text;
 }
 
-.homeInformation p {
-    font-size: 1.3rem;
-}
-
-
 /* Games Section */
 .homeGames {
     max-width: 180ch;
     margin: 0 auto;
+    margin-top: 4rem;
 }
 
 .homeGamesHeader h2 {
@@ -134,19 +127,13 @@
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
     background-clip: text;
-    font-size: 4rem;
 }
 
 .homeGamesCards h3 {
-    font-size: 1.6rem;
     background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
     color: transparent;
     background-clip: text;
     max-width: 400px;
-}
-
-.homeGamesCards p {
-    font-size: 1.2rem;
 }
 
 .homeGamesCards {
@@ -162,7 +149,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 300px;
+    min-width: 18.75rem;
+    min-height: 47.5rem;
 }
 
 .gameOne:hover, .gameTwo:hover, .gameThree:hover {
@@ -195,10 +183,6 @@
         .gameOne, .gameTwo, .gameThree {
             max-width: 600px;
         }
-
-        .homeInformation h3 {
-            font-size: 2rem;
-        }
 }
 
 @media only screen and (max-width: 720px) {
@@ -210,11 +194,4 @@
     .welcomeSection {
         margin: 2rem;
     }
-
-
 }
-
-
-
-
-
