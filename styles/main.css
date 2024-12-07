@@ -74,8 +74,7 @@ nav img {
 nav a {
   text-decoration: none;
   color: white;
-
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .navLinks {
@@ -167,7 +166,6 @@ footer a {
   text-decoration: none;
   color: white;
 }
-
 
 .footerOne {
   display: flex;
