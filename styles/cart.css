@@ -1,45 +1,24 @@
 #label {
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-#label h2 {
-  color: #fff;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.checkoutCart {
-  color: #fff;
-  padding: 20px;
-  padding-top: 60px;
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 2rem;
+  text-align: center;
 }
 
 .checkoutCartItems {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-@media (max-width: 1024px) {
-  .checkoutCartItems {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .checkoutCartItems h4 {
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  min-height: 4rem;
   text-align: center;
   width: auto;
 }
 
 .checkoutCartItems p {
-  margin-top: 10px;
+  margin-top: 1rem;
   color: #ffffff;
 }
 
@@ -53,32 +32,34 @@
 .checkoutCartItem {
   width: 250px;
   box-sizing: border-box;
-  padding: 10px;
-  margin: 10px;
+  padding: 1rem;
+  margin: 1rem;
   border: 4px solid transparent;
   border-radius: 20px;
   background: #253049;
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   position: relative;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.1);
 }
 
 .checkoutCartTotal {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 60px;
 }
 
 .checkoutCartButton {
+  margin-left: 1rem;
   background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
   color: #fff;
   border-radius: 10px;
   padding: 15px 60px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -111,16 +92,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  margin-top: 10px;
+  gap: 2rem;
 }
 
 .quantity-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin: 10px 0;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .quantity-controls button {
@@ -131,7 +111,7 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +123,7 @@
 
 .quantity {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   min-width: 20px;
   text-align: center;
 }
