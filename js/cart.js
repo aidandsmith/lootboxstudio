@@ -1,21 +1,23 @@
-let label = document.getElementById('label');
-let shoppingCart = document.getElementById('shoppingCart');
+let label = document.getElementById("label");
+let shoppingCart = document.getElementById("shoppingCart");
 
 let removeItem = (id) => {
-    window.cart = window.cart.filter((game) => game.id !== id);
-    window.updateCart(window.cart);
-    generateCheckoutCartItems();
+  window.cart = window.cart.filter((game) => game.id !== id);
+  window.updateCart(window.cart);
+  generateCheckoutCartItems();
 };
 
 let generateCheckoutCartItems = () => {
-    if(window.cart.length !== 0) {
-        label.innerHTML = `<h2>Shopping Cart</h2>`;
-        shoppingCart.innerHTML = `
+  if (window.cart.length !== 0) {
+    label.innerHTML = `<h2>Shopping Cart</h2>`;
+    shoppingCart.innerHTML = `
             <div class="checkoutCart">
                 <div class="checkoutCartItems">
-                    ${window.cart.map((game) => {
-                        let {id} = game;
-                        let search = gameCardData.find(game => game.gameId === id) || [];
+                    ${window.cart
+                      .map((game) => {
+                        let { id } = game;
+                        let search =
+                          gameCardData.find((game) => game.gameId === id) || [];
                         return `
                             <div class="checkoutCartItem">
                                 <img src="${search.image}" alt="${search.name}">
@@ -23,26 +25,30 @@ let generateCheckoutCartItems = () => {
                                 <div class="price-container">
                                     <p>Price: $${search.price}</p>
                                     <button onclick="removeItem('${id}')" class="delete-item">
-                                        <i class="fas fa-trash"></i>
+                                        <i class="fas fa-trash"></i> Remove
                                     </button>
                                 </div>
                             </div>
                         `;
-                    }).join('')}
+                      })
+                      .join("")}
                 </div>
                 <div class="checkoutCartTotal">
-                    <h3>Total: $${window.cart.reduce((total, game) => {
-                        let search = gameCardData.find(x => x.gameId === game.id) || [];
+                    <h3>Total: $${window.cart
+                      .reduce((total, game) => {
+                        let search =
+                          gameCardData.find((x) => x.gameId === game.id) || [];
                         return total + search.price;
-                    }, 0).toFixed(2)}</h3>
+                      }, 0)
+                      .toFixed(2)}</h3>
                     <a href="checkout.html">
                         <button class="checkoutCartButton">Checkout</button>
                     </a>
                 </div>
             </div>
         `;
-    } else {
-        label.innerHTML = `
+  } else {
+    label.innerHTML = `
             <div class="empty-cart">
                 <h2>Cart is empty</h2>
                 <a href="games-select.html">
@@ -50,8 +56,8 @@ let generateCheckoutCartItems = () => {
                 </a>
             </div>
         `;
-        shoppingCart.innerHTML = '';
-    }
+    shoppingCart.innerHTML = "";
+  }
 };
 
 generateCheckoutCartItems();
