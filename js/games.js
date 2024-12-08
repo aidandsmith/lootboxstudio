@@ -8,20 +8,20 @@ let gameCardData = [
     price: 49.99,
   },
   {
-    gameId: "game1",
-    name: "Sea Otter vs Communist Zombies",
-    image: "img/otterNoText.jpg",
-    description:
-      "Sea Otter vs Communist Zombies is a 90s-style 2D platformer with intense boss battles and retro visuals. A must-play game!",
-    price: 29.99,
-  },
-  {
     gameId: "game3",
     name: "Clyde the Capybara: Guardian of the Riverbank (Pre-Order)",
     image: "img/Capybara.jpg",
     description:
       "Clyde the capybara defends his Amazon River bank from predators, jaguars, anacondas, and pesky pelicans.",
     price: 49.99,
+  },
+  {
+    gameId: "game1",
+    name: "Sea Otter vs Communist Zombies",
+    image: "img/otterNoText.jpg",
+    description:
+      "Sea Otter vs Communist Zombies is a 90s-style 2D platformer with intense boss battles and retro visuals. A must-play game!",
+    price: 29.99,
   },
 ];
 

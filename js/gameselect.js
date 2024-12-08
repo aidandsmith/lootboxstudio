@@ -24,8 +24,11 @@ let generateGameCards = () => {
             .map((game) => {
                 let {gameId, name, image, description, price} = game;
                 let inCart = window.cart.some(item => item.id === gameId);
+                let isClyde = name.toLowerCase().includes('clyde');
+                
                 return ` 
                 <div class="item">
+                    ${isClyde ? '<div class="upcoming-banner">Upcoming Release!</div>' : ''}
                     <div class="details">
                         <img src="${image}" alt="${name}">
                         <h3>${name}</h3>
