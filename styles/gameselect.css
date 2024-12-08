@@ -90,3 +90,9 @@ body main {
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   z-index: 1;
 }
+
+.remove-button {
+    background-image: none !important;
+    background-color: #ff4444 !important;
+    border: 2px solid #ff4444 !important;
+}
