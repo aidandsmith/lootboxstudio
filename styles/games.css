@@ -49,6 +49,16 @@
   font-size: 2.2rem;
 }
 
+.gameGallery img, .gameGallery img {
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.gameGallery img:hover, .gameGallery img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
 .screenshot {
   width: 10rem;
   height: auto;
