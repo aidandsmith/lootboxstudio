@@ -95,7 +95,22 @@
   gap: 2rem;
 }
 
-.quantity-controls {
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 9rem;
+  color: #fff;
+}
+
+.empty-cart h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* === For Potential Future Use === */
+/* .quantity-controls {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,18 +141,4 @@
   font-size: 1rem;
   min-width: 20px;
   text-align: center;
-}
-
-.empty-cart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 120px;
-  color: #fff;
-}
-
-.empty-cart h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
+} */
