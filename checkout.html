@@ -49,12 +49,12 @@
             </div>
             <div class="input-control">
                 <label class="form-label" for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter a password">
+                <input type="password" name="password" id="password" placeholder="8 Characters or more">
                 <div class="error"></div>
             </div>
             <div class="input-control">
-                <label class="form-label" for="password2">Password again</label>
-                <input type="password" name="password2" id="password2" placeholder="Enter a password">
+                <label class="form-label" for="password2">Retype Password</label>
+                <input type="password" name="password2" id="password2" placeholder="Must match the password above">
                 <div class="error"></div>
             </div>
             <div class="input-control">
@@ -70,20 +70,23 @@
             <div class="input-control">
                 <label class="form-label" for="phone">Phone Number</label>
                 <input type="text" name="phone" id="phone" title="Please enter a valid phone number"
-                    placeholder="Enter your Phone Number">
+                    placeholder="123-456-7890">
                 <div class="error"></div>
             </div>
             <div class="input-control">
                 <label class="form-label" for="ccn">Credit Card Information</label>
-                <input class="form-input" id="ccn" type="tel" inputmode="numeric" placeholder="xxxx xxxx xxxx xxxx">
+                <input class="form-input" id="ccn" type="tel" inputmode="numeric"
+                    placeholder="xxxx xxxx xxxx xxxx (no dash)">
                 <div class="error"></div>
             </div>
             <div class="input-control">
-                <input class="form-input" type="tel" name="cvv" id="cvv" placeholder="Enter your CVV">
+                <label class="form-label" for="cvv">Credit Card CVV</label>
+                <input class="form-input" type="tel" name="cvv" id="cvv" placeholder="xxx">
                 <div class="error"></div>
             </div>
             <div class="input-control">
-                <input class="form-input" type="tel" name="expiry" id="expiry" placeholder="Enter your Expiry Date">
+                <label class="form-label" for="expiry">Credit Card Expiry Date</label>
+                <input class="form-input" type="tel" name="expiry" id="expiry" placeholder="xx/xx">
                 <div class="error"></div>
             </div>
             <button type="submit" class="form-btn"> Complete Purchase</button>
