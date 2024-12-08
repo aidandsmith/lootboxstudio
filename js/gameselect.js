@@ -1,7 +1,7 @@
 let gameSelect = document.getElementById('gameSelect');
 
 const triggerConfetti = () => {
-    // Left side confetti
+    // Left side confetti with a slight delay
     confetti({
         particleCount: 200,
         spread: 70,
@@ -23,8 +23,12 @@ let generateGameCards = () => {
         gameSelect.innerHTML = gameCardData
             .map((game) => {
                 let {gameId, name, image, description, price} = game;
+                let inCart = window.cart.some(item => item.id === gameId);
+                let isClyde = name.toLowerCase().includes('clyde');
+                
                 return ` 
                 <div class="item">
+                    ${isClyde ? '<div class="upcoming-banner">Upcoming Release!</div>' : ''}
                     <div class="details">
                         <img src="${image}" alt="${name}">
                         <h3>${name}</h3>
@@ -32,7 +36,10 @@ let generateGameCards = () => {
                         <p class="price">$${price}</p>
                     </div>
                     <div class="buttons gameCardButton">
-                        <button onclick="incrementCartAmount('${gameId}')">Add to Cart</button>
+                        <button onclick="${inCart ? 'removeFromCart' : 'incrementCartAmount'}('${gameId}')" 
+                                class="${inCart ? 'remove-button' : ''}">
+                            ${inCart ? 'Remove from Cart' : 'Add to Cart'}
+                        </button>
                     </div>
                 </div>
                 `;
@@ -41,19 +48,20 @@ let generateGameCards = () => {
 };
 
 let incrementCartAmount = (gameId) => {
-    let searchCart = window.cart.find((game) => game.id === gameId);
-
-    if (searchCart === undefined) {
-        window.cart.push({
-            id: gameId,
-            item: 1,
-        });
-    } else {
-        searchCart.item += 1;
-    }
+    window.cart.push({
+        id: gameId,
+        item: 1,
+    });
     
     window.updateCart(window.cart);
     triggerConfetti();
+    generateGameCards(); 
+};
+
+let removeFromCart = (gameId) => {
+    window.cart = window.cart.filter((game) => game.id !== gameId);
+    window.updateCart(window.cart);
+    generateGameCards();
 };
 
 generateGameCards();

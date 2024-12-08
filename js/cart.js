@@ -1,19 +1,6 @@
 let label = document.getElementById('label');
 let shoppingCart = document.getElementById('shoppingCart');
 
-let updateQuantity = (id, operation) => {
-    let search = window.cart.find((game) => game.id === id);
-    
-    if (operation === "plus") {
-        search.item += 1;
-    } else if (operation === "minus" && search.item > 1) {
-        search.item -= 1;
-    }
-    
-    window.updateCart(window.cart);
-    generateCheckoutCartItems();
-};
-
 let removeItem = (id) => {
     window.cart = window.cart.filter((game) => game.id !== id);
     window.updateCart(window.cart);
@@ -27,17 +14,12 @@ let generateCheckoutCartItems = () => {
             <div class="checkoutCart">
                 <div class="checkoutCartItems">
                     ${window.cart.map((game) => {
-                        let {id, item} = game;
+                        let {id} = game;
                         let search = gameCardData.find(game => game.gameId === id) || [];
                         return `
                             <div class="checkoutCartItem">
                                 <img src="${search.image}" alt="${search.name}">
                                 <h4>${search.name}</h4>
-                                <div class="quantity-controls">
-                                    <button onclick="updateQuantity('${id}', 'minus')">-</button>
-                                    <span class="quantity">${item}</span>
-                                    <button onclick="updateQuantity('${id}', 'plus')">+</button>
-                                </div>
                                 <div class="price-container">
                                     <p>Price: $${search.price}</p>
                                     <button onclick="removeItem('${id}')" class="delete-item">
@@ -51,7 +33,7 @@ let generateCheckoutCartItems = () => {
                 <div class="checkoutCartTotal">
                     <h3>Total: $${window.cart.reduce((total, game) => {
                         let search = gameCardData.find(x => x.gameId === game.id) || [];
-                        return total + (search.price * game.item);
+                        return total + search.price;
                     }, 0).toFixed(2)}</h3>
                     <a href="checkout.html">
                         <button class="checkoutCartButton">Checkout</button>

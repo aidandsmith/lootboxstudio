@@ -23,6 +23,12 @@ body main {
 }
 
 .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 20px;
+  margin-bottom: 20px; */
+  position: relative;
   margin: 1rem;
   max-width: 33rem;
 }
@@ -69,4 +75,24 @@ body main {
 
 .buttons button:hover {
   transform: scale(1.05);
+}
+
+.upcoming-banner {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 8px 16px;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  transform: rotate(5deg);
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.remove-button {
+    background-image: none !important;
+    background-color: #ff4444 !important;
+    border: 2px solid #ff4444 !important;
 }
