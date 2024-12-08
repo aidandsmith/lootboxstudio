@@ -1,32 +1,23 @@
 .user-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 5px;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 10px;
   background-color: #253049;
-  width: 40%;
-  margin: 0 auto;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  max-width: 33rem;
+  margin: 4rem auto;
   color: #ffffff;
-  box-shadow: 0px 0px 20px linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
 }
 
-@media (max-width: 1024px) {
-  .user-info {
-    width: 80%;
-  }
+.body main {
+  padding: 0 0.5rem;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 2rem 0.5rem;
   font-size: 2rem;
-  margin-top: 60px;
-  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-  color: transparent;
-  background-clip: text;
 }
 
 .form-label {
@@ -49,48 +40,35 @@ input:focus {
   background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
   color: #fff;
   border-radius: 10px;
-  padding: 15px 80px;
-  font-size: 16px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 20px;
   margin: 0 auto;
-  width: 60%;
+  width: fit-content;
 }
 
 .form-btn:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 1440px) {
-  .form-btn {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .form-btn {
-    width: 90%;
-  }
-}
-
 .cc-box {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 1rem;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .input-control {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
 }
 
 .input-control input,
 select {
-  padding: 10px;
+  padding: 0.5rem;
   border-radius: 5px;
   width: 100%;
   display: block;
@@ -126,5 +104,5 @@ select {
 .input-control .error {
   color: #ff3860;
   font-size: 0.9rem;
-  height: 13px;
+  height: 1rem;
 }
