@@ -15,17 +15,16 @@
   height: auto;
 }
 
-.awardsInformation p {
-  font-size: 1rem;
-  line-height: 0;
-}
-
 .award {
   display: flex;
   max-width: 17rem;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+}
+
+.award p {
+  margin: 0;
 }
 
 /* Team */
@@ -44,14 +43,6 @@
   justify-content: center;
 }
 
-.teamMembers p {
-  margin: 0;
-}
-
-.teamMembers h3 {
-  margin: 0;
-}
-
 .aidan,
 .brody,
 .austin {
@@ -63,23 +54,18 @@
   border: 2px solid #15514a;
 }
 
-.aidan h3,
-.brody h3,
-.austin h3 {
-  font-size: 1.6rem;
-}
-
-.aidan p,
-.brody p,
-.austin p {
-  color: rgb(121, 121, 230);
-}
-
-.aidan img,
-.brody img,
-.austin img {
+.teamMembers img {
   border-radius: 5px;
   width: auto;
   height: 14rem;
   object-fit: cover;
+}
+
+.teamMembers h3 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.teamMembers p {
+  margin: 0;
 }

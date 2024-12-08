@@ -25,13 +25,12 @@
 }
 
 .accordion p {
-  font-size: 1rem;
 }
 
 .accordion-content {
   display: none;
   padding: 0.5rem;
-  background-color: #1a243b;
+  background-color: #253049;
   color: white;
 }
 
@@ -42,6 +41,5 @@
 .accordionIcon {
   float: right;
   color: rgb(58, 213, 154);
-  font-size: 1rem;
 }
 /* =============================== */

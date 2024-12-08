@@ -1,32 +1,11 @@
-body {
-  font-size: 1.2rem;
-}
-
-/* .gameHeader {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0;
-} */
-
-/* @media (max-width: 1024px) {
-  .gameHeader {
-    text-align: center;
-  }
-} */
-
 .gameHeader h1 {
   text-align: center;
-  font-size: 3rem;
-  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-  color: transparent;
-  background-clip: text;
 }
 
 .twoGames {
-  /* width: 100%; */
   background-color: #1a243b;
   display: flex;
-  /* flex-wrap: wrap; */
+
   justify-content: center;
 }
 
@@ -37,16 +16,6 @@ body {
   margin: 0 auto;
 }
 
-/* .gameImage img {
-  width: 100%;
-} */
-
-/* @media (max-width: 1024px) {
-  .gameImage {
-    width: 100%;
-  }
-} */
-
 .about,
 .description {
   background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
@@ -56,7 +25,7 @@ body {
 }
 
 .requirements {
-  font-size: 20px;
+  font-weight: bold;
   background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
   color: transparent;
   background-clip: text;
@@ -64,7 +33,7 @@ body {
 
 .gameOne,
 .gameTwo {
-  max-width: 90ch;
+  max-width: 80ch;
   background-color: #253049;
   padding: 2rem;
   margin: 1rem;
@@ -77,15 +46,7 @@ body {
 
 .gameOne h2,
 .gameTwo h2 {
-  font-size: 2.4rem;
-  background-image: linear-gradient(rgb(58, 213, 154), rgb(24, 121, 132));
-  color: transparent;
-  background-clip: text;
-}
-
-.gameGallery {
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 2.2rem;
 }
 
 .screenshot {
