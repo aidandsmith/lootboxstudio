@@ -58,7 +58,7 @@
 
 .gameGallery img {
   transition: 0.25s ease;
-  cursor: pointer;
+  /* cursor: zoom-in; */
 }
 
 .gameGallery img:hover {
