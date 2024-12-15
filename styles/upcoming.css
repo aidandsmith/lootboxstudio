@@ -30,8 +30,9 @@
 
 #capy-cover {
   display: block;
-  height: 22rem;
-  width: auto;
+  max-width: 22rem;
+  width: 97%;
+  height: auto;
   margin: 2rem auto 1rem auto;
 }
 
